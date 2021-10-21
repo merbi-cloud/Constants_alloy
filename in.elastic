@@ -45,7 +45,8 @@
 
 include init.mod
 include potential.mod
-
+#
+comm_style tilted 
 # Compute initial state
 fix 3 all box/relax  aniso 0.0
 minimize ${etol} ${ftol} ${maxiter} ${maxeval}
