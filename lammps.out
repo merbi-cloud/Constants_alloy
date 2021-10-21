@@ -1,0 +1,879 @@
+LAMMPS (16 Mar 2018)
+Lattice spacing in x,y,z = 3.515 3.515 3.515
+Created triclinic box = (0 0 0) to (3.515 3.515 3.515) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+Created 4 atoms
+  Time spent = 0.000298977 secs
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 0
+WARNING: Energy due to 3 extra global DOFs will be included in minimizer energies
+Per MPI rank memory allocation (min/avg/max) = 4.364 | 4.364 | 4.364 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+       0            0   -17.799551    7787.3508    7787.3508    7787.3508    7787.3508 -8.0381159e-11 -1.1468395e-10 -1.0854016e-10        3.515        3.515        3.515    43.428616 
+       1            0   -17.799612    7235.0834    7235.0834    7235.0834    7235.0834 -1.0351728e-10 -6.7049513e-11 -7.5750595e-11    3.5153515    3.5153515    3.5153515    43.441646 
+       2            0   -17.799668    6683.5652    6683.5652    6683.5652    6683.5652 -1.7269026e-11 -2.2002018e-11 -2.7630441e-11     3.515703     3.515703     3.515703    43.454678 
+       3            0    -17.79972    6132.7993    6132.7993    6132.7993    6132.7993 3.9131387e-11 5.2686704e-11 4.4502362e-11    3.5160545    3.5160545    3.5160545    43.467713 
+       4            0   -17.799768    5582.7595    5582.7595    5582.7595    5582.7595 5.1392486e-11 3.2216185e-11 5.2159538e-11     3.516406     3.516406     3.516406    43.480751 
+       5            0   -17.799811    5033.4511    5033.4511    5033.4511    5033.4511 2.6966575e-11 -5.6744832e-11 -4.4475679e-11    3.5167575    3.5167575    3.5167575    43.493791 
+       6            0    -17.79985    4484.8753    4484.8753    4484.8753    4484.8753 2.8108379e-11 1.5331843e-11 7.6659216e-12     3.517109     3.517109     3.517109    43.506834 
+       7            0   -17.799884    3937.0263    3937.0263    3937.0263    3937.0263 1.6604518e-12 -4.5470834e-11 -4.4959926e-11    3.5174605    3.5174605    3.5174605     43.51988 
+       8            0   -17.799914    3389.9032    3389.9032    3389.9032    3389.9032 -5.3629287e-11 -4.2392674e-11 -5.5161552e-11     3.517812     3.517812     3.517812    43.532928 
+       9            0    -17.79994    2843.5051    2843.5051    2843.5051    2843.5051 1.1475781e-10 1.3684135e-10 1.3275653e-10    3.5181635    3.5181635    3.5181635    43.545979 
+      10            0    -17.79996    2297.8324    2297.8324    2297.8324    2297.8324 4.976878e-12 4.3388167e-11 2.2970206e-11     3.518515     3.518515     3.518515    43.559032 
+      11            0   -17.799977    1752.8854    1752.8854    1752.8854    1752.8854 1.4798586e-11 4.0823686e-12 1.0716218e-11    3.5188665    3.5188665    3.5188665    43.572088 
+      12            0   -17.799989    1208.6645    1208.6645    1208.6645    1208.6645 3.8388275e-11 1.5304296e-12 -5.1014319e-13     3.519218     3.519218     3.519218    43.585147 
+      13            0   -17.799997    665.16997    665.16997    665.16997    665.16997 -7.6498553e-13 -2.0909605e-11 -3.7229296e-11    3.5195695    3.5195695    3.5195695    43.598208 
+      14            0        -17.8    122.40213    122.40213    122.40213    122.40213 7.8642448e-11 2.8550905e-11 6.3219861e-11     3.519921     3.519921     3.519921    43.611272 
+      15            0        -17.8 -0.044631379 -0.044631379 -0.044631379 -0.044631379 2.791172e-11 2.7019565e-11 2.0901927e-11    3.5200004    3.5200004    3.5200004    43.614221 
+      16            0        -17.8 -2.5375025e-07 -2.537308e-07 -2.5377668e-07 -2.5374329e-07 -1.0833316e-11 9.1764561e-12 2.5999959e-11    3.5200003    3.5200003    3.5200003     43.61422 
+Loop time of 0.00126004 on 1 procs for 16 steps with 4 atoms
+
+99.0% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7995505644     -17.7999999901     -17.7999999901
+  Force two-norm initial, final = 0.365608 1.19473e-11
+  Force max component initial, final = 0.211084 6.89846e-12
+  Final line search alpha, max atom move = 1 6.89846e-12
+  Iterations, force evaluations = 16 18
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00061727 | 0.00061727 | 0.00061727 |   0.0 | 48.99
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00011253 | 0.00011253 | 0.00011253 |   0.0 |  8.93
+Output  | 0.00019193 | 0.00019193 | 0.00019193 |   0.0 | 15.23
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0003383  |            |       | 26.85
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Displacing atoms ...
+System init for write_restart ...
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8    1.8101802    2.4703617    1.4800805    1.4800985 -5.5836393e-05 -3.7150188e-05 4.7927841e-05    3.5199968    3.5200003    3.5200003    43.614177 
+      17            0        -17.8    1.8100543    2.4702381    1.4799613    1.4799636 4.391854e-06 4.9581314e-06 -3.7760742e-06    3.5199968    3.5200003    3.5200003    43.614177 
+      18            0        -17.8    1.8100441     2.470228    1.4799522    1.4799522 -6.601957e-11 2.5490181e-12 -4.3843112e-11    3.5199968    3.5200003    3.5200003    43.614177 
+      19            0        -17.8    1.8100441     2.470228    1.4799522    1.4799522 -4.7411737e-11 2.4470574e-11 -7.6470544e-11    3.5199968    3.5200003    3.5200003    43.614177 
+Loop time of 0.000348091 on 1 procs for 3 steps with 4 atoms
+
+98.3% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891     -17.7999999901     -17.7999999901
+  Force two-norm initial, final = 0.00017019 5.57037e-11
+  Force max component initial, final = 9.64831e-05 2.39465e-11
+  Final line search alpha, max atom move = 1 2.39465e-11
+  Iterations, force evaluations = 3 6
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00024509 | 0.00024509 | 0.00024509 |   0.0 | 70.41
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 5.2691e-05 | 5.2691e-05 | 5.2691e-05 |   0.0 | 15.14
+Output  | 2.5988e-05 | 2.5988e-05 | 2.5988e-05 |   0.0 |  7.47
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.432e-05  |            |       |  6.99
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8   -1.8098975   -2.4700819   -1.4798143   -1.4797963 -5.5836273e-05 -3.7150336e-05 4.7927867e-05    3.5200039    3.5200003    3.5200003    43.614264 
+      17            0        -17.8   -1.8100234   -2.4702056   -1.4799335   -1.4799312 4.3916595e-06 4.9581464e-06 -3.7759866e-06    3.5200039    3.5200003    3.5200003    43.614264 
+      18            0        -17.8   -1.8100336   -2.4702157   -1.4799426   -1.4799426 2.0009752e-11 3.0588156e-12 7.3411575e-11    3.5200039    3.5200003    3.5200003    43.614264 
+      19            0        -17.8   -1.8100336   -2.4702157   -1.4799426   -1.4799426 3.2117564e-11 -6.5254734e-11 3.4666577e-11    3.5200039    3.5200003    3.5200003    43.614264 
+Loop time of 0.000323057 on 1 procs for 3 steps with 4 atoms
+
+72.1% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891     -17.7999999901     -17.7999999901
+  Force two-norm initial, final = 0.000170188 5.57008e-11
+  Force max component initial, final = 9.64822e-05 2.36026e-11
+  Final line search alpha, max atom move = 1 2.36026e-11
+  Iterations, force evaluations = 3 6
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00023556 | 0.00023556 | 0.00023556 |   0.0 | 72.92
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 4.1485e-05 | 4.1485e-05 | 4.1485e-05 |   0.0 | 12.84
+Output  | 2.1935e-05 | 2.1935e-05 | 2.1935e-05 |   0.0 |  6.79
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.408e-05  |            |       |  7.45
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8    1.8101802    1.4800859    2.4703563    1.4800985 -5.583626e-05 -3.7150129e-05 4.7927888e-05    3.5200003    3.5199968    3.5200003    43.614177 
+      17            0        -17.8    1.8100543    1.4799622    2.4702371    1.4799636 4.3916608e-06 4.9582134e-06 -3.7762659e-06    3.5200003    3.5199968    3.5200003    43.614177 
+      18            0        -17.8    1.8100441    1.4799522     2.470228    1.4799522 -4.3843112e-11 -4.3333308e-11 -3.4666647e-11    3.5200003    3.5199968    3.5200003    43.614177 
+      19            0        -17.8    1.8100441    1.4799522     2.470228    1.4799522 -7.4176428e-11 -3.0588218e-11 -6.7803882e-11    3.5200003    3.5199968    3.5200003    43.614177 
+Loop time of 0.000313997 on 1 procs for 3 steps with 4 atoms
+
+76.4% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891     -17.7999999901     -17.7999999901
+  Force two-norm initial, final = 0.00017019 6.11888e-11
+  Force max component initial, final = 9.6483e-05 3.29067e-11
+  Final line search alpha, max atom move = 1 3.29067e-11
+  Iterations, force evaluations = 3 6
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00022793 | 0.00022793 | 0.00022793 |   0.0 | 72.59
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 3.9577e-05 | 3.9577e-05 | 3.9577e-05 |   0.0 | 12.60
+Output  | 2.2173e-05 | 2.2173e-05 | 2.2173e-05 |   0.0 |  7.06
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.432e-05  |            |       |  7.74
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8   -1.8098975   -1.4798089   -2.4700873   -1.4797963 -5.5836283e-05 -3.715041e-05 4.7927888e-05    3.5200003    3.5200039    3.5200003    43.614264 
+      17            0        -17.8   -1.8100234   -1.4799325   -2.4702065   -1.4799312 4.3917829e-06 4.9580995e-06 -3.7760615e-06    3.5200003    3.5200039    3.5200003    43.614264 
+      18            0        -17.8   -1.8100336   -1.4799426   -2.4702157   -1.4799426 -7.4940983e-11 -2.6509736e-11 7.2901773e-11    3.5200003    3.5200039    3.5200003    43.614264 
+      19            0        -17.8   -1.8100336   -1.4799426   -2.4702157   -1.4799426 -4.5117531e-11 -1.1062717e-10 4.2313616e-11    3.5200003    3.5200039    3.5200003    43.614264 
+Loop time of 0.000298023 on 1 procs for 3 steps with 4 atoms
+
+79.5% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891     -17.7999999901     -17.7999999901
+  Force two-norm initial, final = 0.000170188 6.11844e-11
+  Force max component initial, final = 9.64823e-05 3.32046e-11
+  Final line search alpha, max atom move = 1 3.32046e-11
+  Iterations, force evaluations = 3 6
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00021815 | 0.00021815 | 0.00021815 |   0.0 | 73.20
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 3.6716e-05 | 3.6716e-05 | 3.6716e-05 |   0.0 | 12.32
+Output  | 2.0981e-05 | 2.0981e-05 | 2.0981e-05 |   0.0 |  7.04
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.217e-05  |            |       |  7.44
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8    1.8101802    1.4800859    1.4800805    2.4703743 -5.5836409e-05 -3.7150399e-05 4.7927869e-05    3.5200003    3.5200003    3.5199968    43.614177 
+      17            0        -17.8    1.8100543    1.4799622    1.4799613    2.4702394 4.3917264e-06 4.9581482e-06 -3.776064e-06    3.5200003    3.5200003    3.5199968    43.614177 
+      18            0        -17.8    1.8100441    1.4799522    1.4799522     2.470228 5.4039184e-11 2.1411752e-11 6.321565e-11    3.5200003    3.5200003    3.5199968    43.614177 
+      19            0        -17.8    1.8100441    1.4799522    1.4799522     2.470228 6.6401922e-11 -1.121568e-11 9.3803867e-11    3.5200003    3.5200003    3.5199968    43.614177 
+Loop time of 0.00030303 on 1 procs for 3 steps with 4 atoms
+
+98.3% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891     -17.7999999901     -17.7999999901
+  Force two-norm initial, final = 0.00017019 1.26216e-11
+  Force max component initial, final = 9.6483e-05 6.69623e-12
+  Final line search alpha, max atom move = 1 6.69623e-12
+  Iterations, force evaluations = 3 6
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00022125 | 0.00022125 | 0.00022125 |   0.0 | 73.01
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 3.7909e-05 | 3.7909e-05 | 3.7909e-05 |   0.0 | 12.51
+Output  | 2.0981e-05 | 2.0981e-05 | 2.0981e-05 |   0.0 |  6.92
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.289e-05  |            |       |  7.55
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8   -1.8098975   -1.4798089   -1.4798143   -2.4700693 -5.5836445e-05 -3.7150325e-05  4.79278e-05    3.5200003    3.5200003    3.5200039    43.614264 
+      17            0        -17.8   -1.8100234   -1.4799325   -1.4799334   -2.4702042 4.391627e-06 4.9581546e-06 -3.7761196e-06    3.5200003    3.5200003    3.5200039    43.614264 
+      18            0        -17.8   -1.8100336   -1.4799426   -1.4799426   -2.4702157 -7.7617447e-11 -6.6274339e-12 -7.035276e-11    3.5200003    3.5200003    3.5200039    43.614264 
+      19            0        -17.8   -1.8100336   -1.4799426   -1.4799426   -2.4702157 -8.0293911e-12 4.5882235e-11 -4.7921445e-11    3.5200003    3.5200003    3.5200039    43.614264 
+Loop time of 0.000317097 on 1 procs for 3 steps with 4 atoms
+
+77.9% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891     -17.7999999901     -17.7999999901
+  Force two-norm initial, final = 0.000170188 1.26164e-11
+  Force max component initial, final = 9.64823e-05 6.39071e-12
+  Final line search alpha, max atom move = 1 6.39071e-12
+  Iterations, force evaluations = 3 6
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00022888 | 0.00022888 | 0.00022888 |   0.0 | 72.18
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 4.1246e-05 | 4.1246e-05 | 4.1246e-05 |   0.0 | 13.01
+Output  | 2.3127e-05 | 2.3127e-05 | 2.3127e-05 |   0.0 |  7.29
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.384e-05  |            |       |  7.52
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 -3.52e-06)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8 0.00013819232 0.00013333991 0.00013062064 0.0001506164 -5.5836113e-05 -3.7150224e-05    1.2552639    3.5200003    3.5200003    3.5200003     43.61422 
+      17            0        -17.8 1.228075e-05 9.6900959e-06 1.1422774e-05 1.5729382e-05 4.3918669e-06 4.9582396e-06    1.2552122    3.5200003    3.5200003    3.5200003     43.61422 
+      18            0        -17.8 2.0594214e-06 -3.7461779e-07 2.2687861e-06 4.2840958e-06 2.8294073e-11 -2.3960746e-11     1.255216    3.5200003    3.5200003    3.5200003     43.61422 
+Loop time of 0.000226974 on 1 procs for 2 steps with 4 atoms
+
+80.6% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891       -17.79999999     -17.7999999901
+  Force two-norm initial, final = 0.000170189 1.46581e-11
+  Force max component initial, final = 9.64827e-05 7.67072e-12
+  Final line search alpha, max atom move = 1 7.67072e-12
+  Iterations, force evaluations = 2 4
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00016379 | 0.00016379 | 0.00016379 |   0.0 | 72.16
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 3.1233e-05 | 3.1233e-05 | 3.1233e-05 |   0.0 | 13.76
+Output  | 1.1921e-05 | 1.1921e-05 | 1.1921e-05 |   0.0 |  5.25
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.003e-05  |            |       |  8.82
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 3.52e-06)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8 0.00013819275 0.00013334035 0.00013062123 0.00015061667 -5.5836542e-05 -3.7150308e-05    -1.255168    3.5200003    3.5200003    3.5200003     43.61422 
+      17            0        -17.8 1.2280938e-05 9.6902313e-06 1.1422839e-05 1.5729745e-05 4.3916831e-06 4.9581626e-06   -1.2552197    3.5200003    3.5200003    3.5200003     43.61422 
+      18            0        -17.8 2.0590679e-06 -3.7501425e-07 2.2684485e-06 4.2837696e-06 -3.759798e-11 -5.556854e-11    -1.255216    3.5200003    3.5200003    3.5200003     43.61422 
+Loop time of 0.000226974 on 1 procs for 2 steps with 4 atoms
+
+81.5% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891       -17.79999999     -17.7999999901
+  Force two-norm initial, final = 0.000170189 1.46584e-11
+  Force max component initial, final = 9.64827e-05 7.6787e-12
+  Final line search alpha, max atom move = 1 7.6787e-12
+  Iterations, force evaluations = 2 4
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00016403 | 0.00016403 | 0.00016403 |   0.0 | 72.27
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 2.7895e-05 | 2.7895e-05 | 2.7895e-05 |   0.0 | 12.29
+Output  | 1.1921e-05 | 1.1921e-05 | 1.1921e-05 |   0.0 |  5.25
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.313e-05  |            |       | 10.19
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 -3.52e-06 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8 0.00013819259 0.00013598354 0.00012797759 0.00015061664 -5.5836478e-05    1.2551788 4.7928034e-05    3.5200003    3.5200003    3.5200003     43.61422 
+      17            0        -17.8 1.2280901e-05 1.2333847e-05 8.7793163e-06 1.5729541e-05 4.3915965e-06    1.2552209 -3.7761413e-06    3.5200003    3.5200003    3.5200003     43.61422 
+      18            0        -17.8 2.0592345e-06 2.2685582e-06 -3.7463456e-07 4.2837797e-06 -7.2901846e-11     1.255216 -7.1372436e-12    3.5200003    3.5200003    3.5200003     43.61422 
+Loop time of 0.000228167 on 1 procs for 2 steps with 4 atoms
+
+100.4% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891       -17.79999999     -17.7999999901
+  Force two-norm initial, final = 0.000170189 1.52827e-11
+  Force max component initial, final = 9.64826e-05 8.8457e-12
+  Final line search alpha, max atom move = 1 8.8457e-12
+  Iterations, force evaluations = 2 4
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00016427 | 0.00016427 | 0.00016427 |   0.0 | 72.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 2.9564e-05 | 2.9564e-05 | 2.9564e-05 |   0.0 | 12.96
+Output  | 1.3113e-05 | 1.3113e-05 | 1.3113e-05 |   0.0 |  5.75
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.122e-05  |            |       |  9.30
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 3.52e-06 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8 0.00013819222 0.00013598324 0.00012797705 0.00015061636 -5.5836217e-05   -1.2552531 4.7927631e-05    3.5200003    3.5200003    3.5200003     43.61422 
+      17            0        -17.8  1.22808e-05 1.2333513e-05 8.7795015e-06 1.5729386e-05 4.3918251e-06    -1.255211 -3.7759506e-06    3.5200003    3.5200003    3.5200003     43.61422 
+      18            0        -17.8 2.0590928e-06 2.2684315e-06 -3.7499805e-07 4.283845e-06 6.6401856e-11    -1.255216 -4.741169e-11    3.5200003    3.5200003    3.5200003     43.61422 
+Loop time of 0.000227928 on 1 procs for 2 steps with 4 atoms
+
+100.0% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891       -17.79999999     -17.7999999901
+  Force two-norm initial, final = 0.000170189 1.52793e-11
+  Force max component initial, final = 9.64827e-05 8.8117e-12
+  Final line search alpha, max atom move = 1 8.8117e-12
+  Iterations, force evaluations = 2 4
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00016284 | 0.00016284 | 0.00016284 |   0.0 | 71.44
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 3.0518e-05 | 3.0518e-05 | 3.0518e-05 |   0.0 | 13.39
+Output  | 1.1921e-05 | 1.1921e-05 | 1.1921e-05 |   0.0 |  5.23
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.265e-05  |            |       |  9.94
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (-3.52e-06 0 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8 0.00013819237 0.00013598323 0.00013263599 0.00014595789    1.2551601 -3.715059e-05 4.7928047e-05    3.5200003    3.5200003    3.5200003     43.61422 
+      17            0        -17.8 1.2281174e-05 1.2334001e-05 1.343845e-05 1.1071072e-05    1.2552204 4.9582982e-06 -3.7761392e-06    3.5200003    3.5200003    3.5200003     43.61422 
+      18            0        -17.8 2.0594646e-06 2.2688479e-06 4.2841451e-06 -3.7459925e-07     1.255216 1.1725472e-10 7.6470468e-11    3.5200003    3.5200003    3.5200003     43.61422 
+Loop time of 0.000230074 on 1 procs for 2 steps with 4 atoms
+
+85.6% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891       -17.79999999     -17.7999999901
+  Force two-norm initial, final = 0.000170189 1.5517e-11
+  Force max component initial, final = 9.64825e-05 8.08727e-12
+  Final line search alpha, max atom move = 1 8.08727e-12
+  Iterations, force evaluations = 2 4
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00016594 | 0.00016594 | 0.00016594 |   0.0 | 72.12
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 3.171e-05  | 3.171e-05  | 3.171e-05  |   0.0 | 13.78
+Output  | 1.3113e-05 | 1.3113e-05 | 1.3113e-05 |   0.0 |  5.70
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 1.931e-05  |            |       |  8.39
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+Reading restart file ...
+  restart file = 16 Mar 2018, LAMMPS = 16 Mar 2018
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (0 0 0)
+  1 by 1 by 1 MPI processor grid
+  4 atoms
+Reading potential file /users/fahs/LAMMPS/Potentials_Ni/CuNi.eam.alloy with DATE: 2014-07-11
+Changing box ...
+  triclinic box = (-0.00250017 -0.00250017 -0.00250017) to (3.5175 3.5175 3.5175) with tilt (3.52e-06 0 0)
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (../min.cpp:168)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8.39433
+  ghost atom cutoff = 8.39433
+  binsize = 4.19717, bins = 1 1 1
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair eam/alloy, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/newton/tri
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 16
+Per MPI rank memory allocation (min/avg/max) = 4.114 | 4.114 | 4.114 Mbytes
+Step Temp PotEng Press Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Volume 
+      16            0        -17.8 0.0001381924 0.00013598335 0.0001326361 0.00014595776   -1.2552718 -3.7150152e-05 4.7927603e-05    3.5200003    3.5200003    3.5200003     43.61422 
+      17            0        -17.8 1.2280982e-05 1.233368e-05 1.3438238e-05 1.1071027e-05   -1.2552116 4.9581239e-06 -3.7760704e-06    3.5200003    3.5200003    3.5200003     43.61422 
+      18            0        -17.8 2.059058e-06 2.2684107e-06 4.2837154e-06 -3.7495204e-07    -1.255216 -7.1882239e-11 -6.9843027e-11    3.5200003    3.5200003    3.5200003     43.61422 
+Loop time of 0.000231028 on 1 procs for 2 steps with 4 atoms
+
+86.6% CPU use with 1 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -17.7999999891       -17.79999999     -17.7999999901
+  Force two-norm initial, final = 0.000170189 1.55168e-11
+  Force max component initial, final = 9.64828e-05 8.09108e-12
+  Final line search alpha, max atom move = 1 8.09108e-12
+  Iterations, force evaluations = 2 4
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00016928 | 0.00016928 | 0.00016928 |   0.0 | 73.27
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 2.7895e-05 | 2.7895e-05 | 2.7895e-05 |   0.0 | 12.07
+Output  | 1.2159e-05 | 1.2159e-05 | 1.2159e-05 |   0.0 |  5.26
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.17e-05   |            |       |  9.39
+
+Nlocal:    4 ave 4 max 4 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    662 ave 662 max 662 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    448 ave 448 max 448 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 448
+Ave neighs/atom = 112
+Neighbor list builds = 0
+Dangerous builds = 0
+=========================================
+Components of the Elastic Constant Tensor
+=========================================
+Elastic Constant C11all = 247.022182230418 GPa
+Elastic Constant C22all = 247.022182221657 GPa
+Elastic Constant C33all = 247.022182220816 GPa
+Elastic Constant C12all = 147.99473891638 GPa
+Elastic Constant C13all = 147.994738918313 GPa
+Elastic Constant C23all = 147.994738917153 GPa
+Elastic Constant C44all = 125.521596290546 GPa
+Elastic Constant C55all = 125.521596284657 GPa
+Elastic Constant C66all = 125.521596288666 GPa
+Elastic Constant C14all = 7.1330371244346e-09 GPa
+Elastic Constant C15all = 5.40952418701887e-09 GPa
+Elastic Constant C16all = 8.94135394119521e-09 GPa
+Elastic Constant C24all = 5.68749038526307e-09 GPa
+Elastic Constant C25all = 1.10882142610401e-08 GPa
+Elastic Constant C26all = 1.00176282636452e-08 GPa
+Elastic Constant C34all = 1.16999826786557e-08 GPa
+Elastic Constant C35all = -3.05881783425485e-09 GPa
+Elastic Constant C36all = 1.068037675728e-08 GPa
+Elastic Constant C45all = 1.7970559868855e-09 GPa
+Elastic Constant C46all = 5.30513868468858e-09 GPa
+Elastic Constant C56all = 1.24583136679474e-09 GPa
+=========================================
+Average properties for a cubic crystal
+=========================================
+Bulk Modulus = 181.003886686287 GPa
+Shear Modulus 1 = 125.521596287956 GPa
+Shear Modulus 2 = 49.5137216535075 GPa
+Poisson Ratio = 0.374654175546669
+Total wall time: 0:00:00
