@@ -46,14 +46,14 @@
 include init.mod
 include potential.mod
 #
-comm_style tiled 
+comm_style tiled
 # Compute initial state
 fix 3 all box/relax  aniso 0.0
+dump 		4 all atom 1000 dump.atom_position_*.txt
 minimize ${etol} ${ftol} ${maxiter} ${maxeval}
 
 
 
-dump 		4 all atom 1000 dump.atom_position_*.txt
 
 
 
