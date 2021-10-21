@@ -52,7 +52,7 @@ minimize ${etol} ${ftol} ${maxiter} ${maxeval}
 
 
 
-dump 		4 all atom 10000 dump.atom_position_*.txt
+dump 		4 all atom 1000 dump.atom_position_*.txt
 
 
 
