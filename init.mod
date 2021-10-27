@@ -31,8 +31,8 @@ variable cunits string GPa
 # Define minimization parameters
 variable etol equal 0.0
 variable ftol equal 1.0e-25
-variable maxiter equal 5000
-variable maxeval equal 10000
+variable maxiter equal 10000
+variable maxeval equal 20000
 variable dmax equal 1.0e-2
 
 # generate the box and atom positions using fcc lattice
@@ -40,7 +40,7 @@ variable a equal 3.92 #3.615
 
 boundary	p p p
 read_data CoPt.in
-replicate 4 4 4
+replicate 4 4 4 
 # Need to set mass to something, just to satisfy LAMMPS
 mass 1 195.084 # Pt
 mass 2 58.933  # Co
